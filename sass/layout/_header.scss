@@ -1,0 +1,15 @@
+.header {
+  padding-top: $header-padding-top;
+
+  &__inner {
+    display: flex;
+    align-items: flex-start;
+    gap: $header-gap;
+  }
+
+  &__logo img {
+    display: block;
+    width: $logo-size;
+    height: $logo-size;
+  }
+}

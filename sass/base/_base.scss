@@ -5,11 +5,33 @@
   padding: 0;
   box-sizing: border-box;
 }
+html {
+  background-color: $color-dark-350;
+}
 
 body {
+  position: relative;
+  overflow-x: hidden;
   font-family: $font-primary;
   font-weight: $fw-regular;
   color: #ffffff;
-  background-color: $color-dark-300;
+  background: $page-gradient;
+  background-repeat: no-repeat;
+  min-height: 100vh;
   line-height: 1.6;
+
+  // Purple glow behind the page content
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: $glow-top;
+    left: calc(50% - #{$glow-offset});
+    width: $glow-size;
+    height: $glow-size;
+    border-radius: 50%;
+    background-color: $glow-color;
+    filter: blur($glow-blur);
+    pointer-events: none;
+  }
 }

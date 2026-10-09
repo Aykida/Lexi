@@ -1,0 +1,27 @@
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: $radius-md;
+  font-size: 1rem;
+  font-weight: $fw-regular;
+  line-height: 1;
+  color: #ffffff;            
+  text-decoration: none;
+  transition: opacity 0.2s;
+
+  &:hover {
+    opacity: 0.85;
+  }
+
+  &--primary {
+    background-color: $color-purple;
+    box-shadow: 0 4px 4px rgba(#000000, 0.16);
+  }
+
+  &--lg {
+    width: 17rem;   // 272px
+    height: 3rem;   // 48px
+  }
+}

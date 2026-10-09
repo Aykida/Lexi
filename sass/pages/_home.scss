@@ -1,0 +1,30 @@
+
+.hero {
+  padding-top: $hero-padding-top; // 237px، یعنی  در 348 شروع می‌شود
+
+  &__inner {
+    display: grid;
+    grid-template-columns: 1fr $hero-content-width;
+  }
+
+  &__content {
+    grid-column: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; // در RTL یعنی سمت راست ستون
+  }
+
+  &__title {
+    margin-bottom: 1.4375rem; // 23px
+    font-size: 1.75rem;       // 28px
+    font-weight: $fw-bold;    // طرح 800، ما 700 داریم
+    line-height: 2.6875rem;   // 43px
+  }
+
+  &__text {
+    margin-bottom: 1.1875rem; // 19px
+    font-size: 1rem;
+    font-weight: $fw-medium;
+    line-height: 1.8875rem;   // 151px ÷ 5 خط
+  }
+}
