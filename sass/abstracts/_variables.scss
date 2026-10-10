@@ -17,35 +17,18 @@ $fw-medium: 500;
 $fw-bold: 700;
 
 // Layout
-$container-width: 72.25rem;     // 1156px 
-$container-gutter: 1rem;
-
-// Header
-$header-padding-top: 2.9375rem; // 47px 
-$header-gap: 5.875rem;          // 94px 
-$nav-offset-top: 0.8125rem;     // 13px لینک ۱۳px پایین‌تر از بالای لوگو
-$logo-size: 4rem;               // 64px 
-
-// Hero
-$hero-padding-top: 14.8125rem;   // 237px 
-$hero-content-width: 35.4375rem; // 567px 
+$container-width: 115.6rem;  // 1156px
+$header-gap: 9.4rem;         // 94px (فاصله لوگو و لینک‌ها)
 
 // Radius
-$radius-md: 0.75rem;             // 12px 
+$radius-md: 1.2rem;          // 12px
 
 // Page background (Desktop - 3 Fill)
-$color-dark-350: #111213; 
+$color-dark-350: #111213;
 $page-gradient: linear-gradient(
   180deg,
   $color-dark-100 0%,
   $color-dark-200 33%,
   $color-dark-300 66%,
   $color-dark-350 100%
-); 
-
-// Background glow (Ellipse 70)
-$glow-size: 29.0625rem;      // 465px
-$glow-top: 46.6875rem;       // 747px
-$glow-offset: 55.8125rem;    // 893px = نصف فریم (720) + 173
-$glow-color: rgba($color-purple, 0.5);
-$glow-blur: 75px;            //  150 
+);

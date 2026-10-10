@@ -1,3 +1,4 @@
+$container-gutter: 1.6rem;
 
 .container {
   width: min(100% - #{$container-gutter * 2}, #{$container-width});

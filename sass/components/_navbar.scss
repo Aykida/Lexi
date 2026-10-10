@@ -1,3 +1,5 @@
+$nav-offset-top: 1.3rem;  // 13px
+
 .navbar {
   margin-top: $nav-offset-top;
 
@@ -10,8 +12,8 @@
   &__link {
     display: flex;
     align-items: center;
-    height: 1.75rem;
-    font-size: 1rem;
+    height: 2.8rem;
+    font-size: 1.6rem;
     font-weight: $fw-medium;
     line-height: 1;
     color: inherit;

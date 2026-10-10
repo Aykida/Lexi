@@ -1,0 +1,38 @@
+.stats {
+  display: flex;
+  align-items: center;
+  align-self: flex-end;   // در RTL یعنی چسبیدن به لبه چپ ستون
+  margin-top: 90px;       // (722 - 632)
+  list-style: none;
+
+  &__item {
+    display: flex;
+    align-items: center;
+    gap: 32px;            
+
+    // خط جداکننده بین دو آمار
+    & + & {
+      margin-inline-start: 36px;                      
+      padding-inline-start: 36px;                     
+      border-inline-start: 1px solid rgba(255, 255, 255, 0.2); 
+    }
+  }
+
+  &__icon {
+    width: 38px;          
+    height: 48px;
+    object-fit: contain;
+  }
+
+  &__number {
+    font-size: 2.4rem;    // 24px
+    font-weight: $fw-bold; // طرح 800، ما 700 داریم
+    line-height: 1;
+    color: #ffffff;
+  }
+
+  &__label {
+    font-size: 1.6rem;      
+    color: #898A8D;       
+  }
+}

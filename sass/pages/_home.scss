@@ -1,10 +1,27 @@
+$hero-padding-top: 23.7rem;    // 237px
+$hero-content-width: 56.7rem;  // 567px
 
 .hero {
-  padding-top: $hero-padding-top; // 237px، یعنی  در 348 شروع می‌شود
+  padding-top: $hero-padding-top;
 
   &__inner {
+    position: relative;
     display: grid;
     grid-template-columns: 1fr $hero-content-width;
+
+    // Purple glow behind the phones
+    &::before {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      top: -64px;
+      left: 632px;
+      width: 502px;
+      height: 502px;
+      border-radius: 50%;
+      background-color: $color-purple;
+      filter: blur(150px);
+    }
   }
 
   &__content {
@@ -15,16 +32,39 @@
   }
 
   &__title {
-    margin-bottom: 1.4375rem; // 23px
-    font-size: 1.75rem;       // 28px
+    margin-bottom: 2.3rem; // 23px
+    font-size: 2.8rem;       // 28px
     font-weight: $fw-bold;    // طرح 800، ما 700 داریم
-    line-height: 2.6875rem;   // 43px
+    line-height: 4.3rem;   // 43px
   }
 
   &__text {
-    margin-bottom: 1.1875rem; // 19px
-    font-size: 1rem;
+    min-height: 15.1rem;   // 151px
+    margin-bottom: 1.9rem; // 19px
+    font-size: 1.6rem;
     font-weight: $fw-medium;
-    line-height: 1.8875rem;   // 151px ÷ 5 خط
+    line-height: 2.9rem;   // 151px ÷ 5 خط
+    
   }
+  &__button {
+    margin-top: 1.9rem; // 19px
+  }
+
+    &__phone {
+      position: absolute;
+      display: block;
+      max-width: none;
+
+      &--back {
+        top: -115.4px;     // -104.37 منهای حاشیه سایه (حدود 11)
+        left: 630px;     
+        width: 427px;      // 854 ÷ 2
+      }
+
+      &--front {
+        top: -154px;       // -139 منهای 15
+        left: 890px;     
+        width: 349.5px;    // 699 ÷ 2
+      }
+    }
 }
