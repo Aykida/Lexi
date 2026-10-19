@@ -1,0 +1,32 @@
+
+.features {
+  height: 47rem;               // 470px
+  padding-top: 4.5rem;         // 45px (1936 - 1891)
+  background-color: #353535;
+
+  &__inner {
+    display: grid;
+    grid-template-columns: 44.1rem 1fr;  // ستون اول (سمت راست در RTL) = کارت‌ها
+    column-gap: 12.6rem;                 // 126px (855 - 729)
+  }
+
+  &__list {
+    grid-column: 1;
+    grid-row: 1;
+    display: grid;
+    grid-template-columns: repeat(2, 20.1rem);
+    column-gap: 3.9rem;                  // 39px
+    row-gap: 4rem;                       // 40px
+    margin-top: 2.1rem;                  // 21px (1957 - 1936)
+    list-style: none;
+  }
+
+  &__content {
+    grid-column: 2;
+    grid-row: 1;
+    text-align: right;
+  }
+    &__text {
+    margin-top: 2.4rem;   
+  }
+}

@@ -3,24 +3,17 @@ $hero-content-width: 56.7rem;  // 567px
 
 .hero {
   padding-top: $hero-padding-top;
+  min-height: 102.4rem;   // 1024px = 1135 (top عنوان درباره ما) - 111 (ارتفاع هدر)
+
 
   &__inner {
     position: relative;
     display: grid;
     grid-template-columns: 1fr $hero-content-width;
 
-    // Purple glow behind the phones
+        // Purple glow 
     &::before {
-      content: "";
-      position: absolute;
-      z-index: -1;
-      top: -64px;
-      left: 632px;
-      width: 502px;
-      height: 502px;
-      border-radius: 50%;
-      background-color: $color-purple;
-      filter: blur(150px);
+      @include glow(-64px, 632px, 502px, 150px, 1);
     }
   }
 
@@ -28,7 +21,7 @@ $hero-content-width: 56.7rem;  // 567px
     grid-column: 2;
     display: flex;
     flex-direction: column;
-    align-items: flex-start; // در RTL یعنی سمت راست ستون
+    align-items: flex-start; // در RTL  سمت راست ستون
   }
 
   &__title {

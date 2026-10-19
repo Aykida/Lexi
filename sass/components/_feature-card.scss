@@ -1,0 +1,16 @@
+.feature-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 20.1rem;                  // 201px
+  height: 20.1rem;
+  border: 1px solid #898a8d;       
+  border-radius: 1.2rem;           // 12px
+  background-color: #282a2c;
+  box-shadow: inset 0 -1.5rem 5rem rgba(45, 45, 45, 0.16);  // y: -15، blur: 50، #2D2D2D 16%
+
+  &__icon {
+    display: block;
+  }
+}

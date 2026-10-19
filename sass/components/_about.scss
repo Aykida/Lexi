@@ -1,0 +1,86 @@
+.about {
+  min-height: 75.6rem;   // 756px = 1891 (top نوار) - 1135 (top درباره ما)
+  &__inner {
+    display: grid;
+    grid-template-columns: 56.7rem 1fr;  // ستون اول (سمت راست در RTL) = 567px
+    align-items: start;
+  }
+
+  // Text column
+  &__content {
+    text-align: right;
+  }
+
+  &__title,
+  &__subtitle {
+    font-size: 2.8rem;       // 28px
+    font-weight: $fw-bold;   // طرح 800، ما 700 داریم
+    line-height: 4.3rem;     // 43px
+    color: #ffffff;
+  }
+
+  &__subtitle {
+    margin-top: 4.6rem;      // 46px (1224 - 1178)
+  }
+
+  &__text {
+    max-width: 54.6rem;      // 546px
+    min-height: 35.9rem;     // 359px
+    margin-top: 1.9rem;      // 19px (1286 - 1267)
+    font-size: 1.6rem;       // 16px
+    font-weight: $fw-medium;
+    line-height: 3.26rem;    // 359px ÷ 11 خط
+    color: #ffffff;
+  }
+
+  // Image column 
+    &__media {
+    position: relative;
+    justify-self: end;      //در RTL  چسبیدن به لبه چپ
+    width: 56.8rem;         // 568px
+    margin-top: 13.1rem;    // 131px (1266 - 1135)
+    margin-left: -0.6rem;   // 6px (142 - 136)
+  }
+
+  &__image {
+    display: block;
+    width: 100%;
+    height: 39rem;          // 390px
+    border-radius: 3rem;    // 30px
+    object-fit: cover;
+  }
+
+  &__play {
+    position: absolute;
+    top: 33.636rem;         // 336.36px
+    left: 51.636rem;        // 516.36px
+    width: 8.8rem;
+    height: 8.8rem;
+    padding: 0;
+    border: none;
+    border-radius: 50%;
+    background-color: #ff9291;                    
+    box-shadow: inset 0 -0.4rem 0.4rem #b45940;
+    cursor: pointer;
+
+    // مثلث پخش
+    &::after {
+      content: "";
+      position: absolute;
+      top: 2.5rem;
+      left: 3.2rem;
+      width: 2.833rem;
+      height: 3.842rem;
+      background-color: #ffffff;
+      clip-path: polygon(0 0, 100% 50%, 0 100%);
+    }
+  }
+
+  &__play-ring {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+  }
+}

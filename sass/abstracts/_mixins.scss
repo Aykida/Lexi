@@ -1,0 +1,15 @@
+
+// Purple glow circle (used behind phones, character, page background)
+@mixin glow($top, $left, $size, $blur, $opacity: 0.5) {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: $top;
+  left: $left;
+  width: $size;
+  height: $size;
+  border-radius: 50%;
+  background-color: rgba($color-purple, $opacity);
+  filter: blur($blur);
+  pointer-events: none;
+}

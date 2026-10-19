@@ -1,0 +1,146 @@
+.audience {
+  padding-top: 25.9rem;   // 259px (2620 - 2361)
+
+  &__inner {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-height: 48.6rem;   // 486px (3106 - 2620)
+        // Purple glow 
+    &::before {
+      @include glow(-40.7rem, -34.9rem, 52.3rem, 175px);
+    }
+  }
+
+  &__content {
+    grid-column: 1;   // سمت راست در RTL
+    grid-row: 1;
+    text-align: right;
+  }
+
+  &__subtitle {
+    margin-top: 1.1rem;      // 11px (2674 - 2663)
+    font-size: 2.4rem;       // 24px
+    font-weight: $fw-bold;   // طرح 800، ما 700 داریم
+    line-height: 4.3rem;     // 43px (ارتفاع کادر)
+    color: #ffffff;         
+  }
+    &__text {
+    width: 59.6rem;        // 596px
+    min-height: 13.9rem;   // 139px
+    margin-top: 0.6rem;    // 6px (2723 - 2717)
+    font-size: 1.6rem;
+    font-weight: $fw-medium;
+    line-height: 3.475rem; // : 139px ÷ 4 خط
+    color: #ffffff;
+  } 
+
+  
+  &__visual {
+    position: absolute;
+    display: block;
+    max-width: none;
+  }
+    &__character {
+    top: -5.9rem;      // 2561 - 2620
+    left: -1.8rem;     // 124 - 142
+    width: 25.6rem;    // 256px
+    height: 48rem;     // 480px
+  }
+
+    // سه آیکن شناور (هر سه 86×86)
+  &__plane,
+  &__clock,
+  &__clipboard {
+    width: 8.6rem;     // 86px
+    height: 8.6rem;
+  }
+
+  &__plane {
+    top: -7.8rem;      // 2542 - 2620
+    left: 21.2rem;     // 354 - 142
+  }
+
+  &__clock {
+    top: 5.5rem;       // 2675 - 2620
+    left: 32rem;       // 462 - 142
+  }
+
+  &__clipboard {
+    top: 18.9rem;      // 2809 - 2620
+    left: 21.7rem;     // 359 - 142
+  }
+
+  &__curve {
+    top: -3.846rem;    // 2581.54 - 2620
+    left: 21.2rem;     // 354 - 142
+    width: 62.7rem;    // 627px
+    height: 10.646rem; // 106.46px
+  }
+}
+
+.benefits {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 116.8rem;         // 1168px
+  height: 20.9rem;         // 209px
+  margin-inline: auto;
+  border-radius: 1.2rem;   // 12px
+  background-color: #353535;
+  list-style: none;
+  position: relative;
+}
+
+.benefit {
+  &__icon {
+    position: absolute;
+    display: block;
+
+    &--interactive {
+      top: 3.4rem;        // 3140 - 3106
+      left: 97.7rem;      // 1111 - 134
+      width: 7.8rem;
+      height: 9.567rem;
+    }
+
+    &--savings {
+      top: 4rem;          // 3146 - 3106
+      left: 58.1rem;      // 715 - 134
+      width: 8.374rem;
+      height: 8.359rem;
+    }
+
+    &--support {
+      top: 4.3rem;        // 3149 - 3106
+      left: 18.3rem;      // 317 - 134
+      width: 8.974rem;
+      height: 7.8rem;
+    }
+  }
+
+  &__label {
+    position: absolute;
+    top: 14.1rem;          // 141px (3247 - 3106)
+    height: 4.3rem;        // 43px
+    font-size: 1.8rem;     // 18px
+    font-weight: $fw-medium;
+    line-height: 4.3rem;
+    text-align: right;
+    color: #c4c4c4;
+
+    &--interactive {
+      left: 86.7rem;       // 1001 - 134
+      width: 20.5rem;      // 205px
+    }
+
+    &--savings {
+      left: 46.7rem;       // 601 - 134
+      width: 22.8rem;      // 228px
+    }
+
+    &--support {
+      left: 9.5rem;        // 229 - 134
+      width: 20rem;        // 200px
+    }
+  }
+}

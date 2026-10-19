@@ -24,17 +24,8 @@ body {
   background: $page-gradient;
   background-repeat: no-repeat;
 
-  // Purple glow on the left (Figma: Ellipse 70)
+   // Purple glow 
   &::before {
-    content: "";
-    position: absolute;
-    z-index: -1;
-    top: 747px;
-    left: -173px;
-    width: 465px;
-    height: 465px;
-    border-radius: 50%;
-    background-color: rgba($color-purple, 0.5);
-    filter: blur(75px);
+    @include glow(747px, -173px, 465px, 75px);
   }
 }
