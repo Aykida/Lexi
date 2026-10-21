@@ -1,0 +1,76 @@
+
+.download {
+  margin-top: 16rem;   // 160px (3475 - 3315)
+
+  &__inner {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 56.6rem;   // 566px = 708 - 142 (ستون دوم در RTL سمت چپ است)
+    &::before {
+      @include glow(-15.7rem, 109.1rem, 52.3rem, 175px,1);
+    }
+  }
+
+  &__content {
+    grid-column: 2;    // سمت چپ در RTL
+    grid-row: 1;
+    text-align: right;
+  }
+
+
+  &__visual {
+    position: absolute;
+    display: block;
+    max-width: none;
+  }
+
+    &__subtitle {
+    margin-top: 1.1rem;      // 11px (3529 - 3518)
+    font-size: 2.4rem;       // 24px
+    font-weight: $fw-bold;   // طرح 800، ما 700 داریم
+    line-height: 4.3rem;     // 43px
+    color: #ffffff;
+  }
+
+  &__text {
+    width: 56.1rem;          // 561px
+    min-height: 13.9rem;     // 139px
+    margin-top: 1.1rem;      // 11px (3583 - 3572)
+    font-size: 1.6rem;
+    font-weight: $fw-medium;
+    line-height: 3.475rem;   // : 139px ÷ 4 خط
+    color: #ffffff;
+  }
+
+    &__stores {
+    display: flex;
+    gap: 2.5rem;             
+    margin-top: 5rem;        // 50px (3772 - 3722)
+    list-style: none;
+  }
+
+  &__store {
+    display: block;
+
+    img {
+      display: block;
+      width: 17rem;          // 170px
+      height: 4.8rem;        // 48px
+      filter: drop-shadow(0 0.4rem 0.4rem rgba(0, 0, 0, 0.16));
+    }
+  }
+
+  &__phone {
+    top: -6rem;          // 3415 - 3475
+    left: 63.5rem;       // 853 - 76 (فضای خالی نصف) - 142
+    width: 48.7rem;      // 935px × 0.521 
+    height: auto;
+  }
+
+  &__curve {
+    top: 34.4rem;            // 3819 - 3475
+    left: 38rem;             // 522 - 142
+    width: 49rem;            // 490px
+    height: 16.973rem;       // 169.73px
+  }
+}

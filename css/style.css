@@ -474,4 +474,79 @@ body::before {
   width: 20rem;
 }
 
+.download {
+  margin-top: 16rem;
+}
+.download__inner {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 56.6rem;
+}
+.download__inner::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: -15.7rem;
+  left: 109.1rem;
+  width: 52.3rem;
+  height: 52.3rem;
+  border-radius: 50%;
+  background-color: #7661a4;
+  filter: blur(175px);
+  pointer-events: none;
+}
+.download__content {
+  grid-column: 2;
+  grid-row: 1;
+  text-align: right;
+}
+.download__visual {
+  position: absolute;
+  display: block;
+  max-width: none;
+}
+.download__subtitle {
+  margin-top: 1.1rem;
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 4.3rem;
+  color: #ffffff;
+}
+.download__text {
+  width: 56.1rem;
+  min-height: 13.9rem;
+  margin-top: 1.1rem;
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 3.475rem;
+  color: #ffffff;
+}
+.download__stores {
+  display: flex;
+  gap: 2.5rem;
+  margin-top: 5rem;
+  list-style: none;
+}
+.download__store {
+  display: block;
+}
+.download__store img {
+  display: block;
+  width: 17rem;
+  height: 4.8rem;
+  filter: drop-shadow(0 0.4rem 0.4rem rgba(0, 0, 0, 0.16));
+}
+.download__phone {
+  top: -6rem;
+  left: 63.5rem;
+  width: 48.7rem;
+  height: auto;
+}
+.download__curve {
+  top: 34.4rem;
+  left: 38rem;
+  width: 49rem;
+  height: 16.973rem;
+}
+
 /*# sourceMappingURL=style.css.map */
