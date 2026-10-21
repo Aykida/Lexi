@@ -1,5 +1,7 @@
 
 .download {
+  min-height: 56rem;   // 560px = 4035 (عنوان وبلاگ) - 3475 (عنوان دانلود)
+
   margin-top: 16rem;   // 160px (3475 - 3315)
 
   &__inner {

@@ -1,0 +1,27 @@
+
+.blog {
+  &__title {
+    margin-bottom: 4rem;     // 40px (4118 - 4078)
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+
+    // کارت وسط ۳ پیکسل بالاتر است
+    li:nth-child(2) {
+      margin-top: -0.3rem;
+    }
+  }
+
+  &__card {
+    display: block;
+
+    img {
+      display: block;
+      width: 36.3rem;        // 363px
+      height: 39.8rem;       // 398px
+    }
+  }
+}
