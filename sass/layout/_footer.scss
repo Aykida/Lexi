@@ -1,0 +1,89 @@
+
+.footer {
+  margin-top: 8rem;        // 80px (4596 - 4516)
+  
+
+  &__box {
+    position: relative;
+    height: 47.7rem;       // 477px
+  }
+
+  &__logo img {
+    position: absolute;
+    top: 5.8rem;           // 58px (4654 - 4596)
+    left: 103.2rem;        // 1032px (1166 - 134)
+    width: 6.4rem;
+    height: 6.4rem;
+  }
+
+  &__text {
+    position: absolute;
+    top: 13.8rem;          // 138px (4734 - 4596)
+    left: 71.9rem;         // 719px (853 - 134)
+    width: 37.7rem;        // 377px
+    min-height: 21.3rem;   // 213px
+    font-size: 1.6rem;
+    font-weight: $fw-medium;
+    line-height: 3.55rem;  // : 213px ÷ 6 خط
+    text-align: right;
+    color: #ffffff;        
+  }
+
+    //headings
+  &__heading {
+    position: absolute;
+    top: 6.1rem;           // 61px (4657 - 4596)
+    height: 4.1rem;        // 41px
+    font-size: 2.4rem;     // 24px
+    font-weight: $fw-bold;
+    line-height: 4.1rem;
+    color: #ffffff;
+  }
+
+  //Access 
+  &__nav &__heading {
+    left: 48.6rem;         // 620 - 134
+    width: 8.8rem;         // 88px
+  }
+
+  //Licenses 
+  &__licenses &__heading {
+    left: 23.5rem;         // 369 - 134
+    width: 7.3rem;         // 73px
+  }
+
+  //Links
+      &__links {
+    position: absolute;
+    top: 12.9rem;          // 129px (4725 - 4596)
+    left: 46.5rem;         // 465px (599 - 134)
+    width: 10.9rem;        // 109px، لبه راست روی 574 (708 - 134)
+    list-style: none;
+    text-align: right;
+
+    li + li {
+      margin-top: 2.8rem;  // 28px
+    }
+  }
+
+  &__link {
+    display: inline-block;
+    height: 2.8rem;        // 28px
+    font-size: 1.6rem;     // 16px
+    font-weight: $fw-medium;
+    line-height: 2.8rem;
+    color: #ffffff;       
+    text-decoration: none;
+
+    &--active {
+      color: $color-purple;
+    }
+  }
+    &__licenses img {
+    position: absolute;
+    top: 13.8rem;          // 4734 - 4596
+    left: 7.2rem;          // 206 - 134
+    width: 23.4rem;        // 234px
+    height: 14.6rem;       // 146px
+  }
+}

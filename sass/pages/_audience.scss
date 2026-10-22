@@ -80,15 +80,11 @@
 }
 
 .benefits {
+  position: relative;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  width: 116.8rem;         // 1168px
   height: 20.9rem;         // 209px
-  margin-inline: auto;
-  border-radius: 1.2rem;   // 12px
-  background-color: #353535;
   list-style: none;
-  position: relative;
 }
 
 .benefit {

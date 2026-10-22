@@ -59,6 +59,13 @@ body::before {
   pointer-events: none;
 }
 
+.box {
+  width: 116.8rem;
+  margin-inline: auto;
+  border-radius: 1.2rem;
+  background-color: #353535;
+}
+
 .heading-secondary {
   font-size: 2.8rem;
   font-weight: 700;
@@ -83,6 +90,80 @@ body::before {
 .container {
   width: min(100% - 3.2rem, 115.6rem);
   margin-inline: auto;
+}
+
+.footer {
+  margin-top: 8rem;
+}
+.footer__box {
+  position: relative;
+  height: 47.7rem;
+}
+.footer__logo img {
+  position: absolute;
+  top: 5.8rem;
+  left: 103.2rem;
+  width: 6.4rem;
+  height: 6.4rem;
+}
+.footer__text {
+  position: absolute;
+  top: 13.8rem;
+  left: 71.9rem;
+  width: 37.7rem;
+  min-height: 21.3rem;
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 3.55rem;
+  text-align: right;
+  color: #ffffff;
+}
+.footer__heading {
+  position: absolute;
+  top: 6.1rem;
+  height: 4.1rem;
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 4.1rem;
+  color: #ffffff;
+}
+.footer__nav .footer__heading {
+  left: 48.6rem;
+  width: 8.8rem;
+}
+.footer__licenses .footer__heading {
+  left: 23.5rem;
+  width: 7.3rem;
+}
+.footer__links {
+  position: absolute;
+  top: 12.9rem;
+  left: 46.5rem;
+  width: 10.9rem;
+  list-style: none;
+  text-align: right;
+}
+.footer__links li + li {
+  margin-top: 2.8rem;
+}
+.footer__link {
+  display: inline-block;
+  height: 2.8rem;
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 2.8rem;
+  color: #ffffff;
+  text-decoration: none;
+}
+.footer__link--active {
+  color: #7661a4;
+}
+.footer__licenses img {
+  position: absolute;
+  top: 13.8rem;
+  left: 7.2rem;
+  width: 23.4rem;
+  height: 14.6rem;
 }
 
 .btn {
@@ -418,15 +499,11 @@ body::before {
 }
 
 .benefits {
+  position: relative;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  width: 116.8rem;
   height: 20.9rem;
-  margin-inline: auto;
-  border-radius: 1.2rem;
-  background-color: #353535;
   list-style: none;
-  position: relative;
 }
 
 .benefit__icon {

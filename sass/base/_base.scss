@@ -29,3 +29,10 @@ body {
     @include glow(747px, -173px, 465px, 75px);
   }
 }
+// Gray rounded box (benefits, footer)
+.box {
+  width: 116.8rem;         // 1168px
+  margin-inline: auto;
+  border-radius: 1.2rem;   // 12px
+  background-color: #353535;
+}
