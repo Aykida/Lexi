@@ -1,0 +1,65 @@
+.cooperation {
+  &__inner {
+    position: relative;
+
+    // Purple glow behind the megaphone (Figma: 452px, #7661A4 25%, blur 300)
+    &::after {
+      @include glow(5.266rem, -3.777rem, 45.2rem, 150px, 0.25);
+    }
+  }
+
+  &__content {
+    text-align: right;
+  }
+
+  &__text {
+    max-width: 56.7rem;      // 567px
+    min-height: 5.2rem;      // 52px
+    margin-top: 2.3rem;      // 23px (300 - 277)
+    font-size: 1.6rem;
+    font-weight: $fw-medium;
+    line-height: 2.6rem;     // 52px ÷ 2 خط
+    color: #ffffff;         
+  }
+
+  // دو ستون؛ ستون اول در RTL سمت راست است
+  &__form {
+    display: grid;
+    grid-template-columns: repeat(2, 32.6rem);  // 326px
+    gap: 2.4rem;             // 24px
+    width: 67.6rem;          // 676px (622 تا 1298)
+    margin-top: 4.4rem;      // 44px (396 - 352)
+  }
+
+    
+  // راست: تحصیلات + قوانین، چپ: رزومه + ارسال
+  &__side,
+  &__upload {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__side {
+    justify-content: space-between;   // تحصیلات بالا، قوانین پایین
+  }
+
+  &__upload {
+    gap: 2.4rem;                      // 24px
+  }
+
+  &__rules,
+  &__submit {
+    height: 4.8rem;                   // 48px (چک‌باکس وسط‌چین با دکمه)
+  }
+
+  &__line-bottom {
+    top: 37.6rem;            // 610 - 234
+    left: -18.9rem;          // -47 - 142
+  }
+
+  &__megaphone {
+    top: 4.3rem;             // 277 - 234
+    left: -5.8rem;           // 84 - 142
+    width: 47.25rem;         // ≈ 472.5px (کادر چرخیده)، با ابعاد فایل چک شود
+  }
+}

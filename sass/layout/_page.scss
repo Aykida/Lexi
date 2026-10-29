@@ -11,6 +11,23 @@
       @include glow(-32.3rem, 106.3rem, 37.3rem, 150px, 0.8);
     }
   }
+  // Decorative images 
+  &__visual {
+    position: absolute;
+    display: block;
+    max-width: none;
+  }
+
+  // Dashed lines rules and cooperation pages
+  &__line-right {
+    top: -14.13rem;      // 92.7 - 234
+    left: 41.7rem;       // 559 - 142
+  }
+
+  &__line-left {
+    top: -16.325rem;     // 70.75 - 234
+    left: -14.6rem;      // -4 - 142
+  }
 }
 // Two paragraphs under the page title (about, rules)
 .page__text {
