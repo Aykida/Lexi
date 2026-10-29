@@ -410,15 +410,6 @@ body::before {
   filter: blur(150px);
   pointer-events: none;
 }
-.about--page .about__text {
-  min-height: 15.1rem;
-  margin-top: 2.3rem;
-  line-height: 2.92rem;
-}
-.about--page .about__text + .about__text {
-  min-height: 40.9rem;
-  margin-top: -0.6rem;
-}
 .about--page .about__media {
   margin-top: 9.1rem;
   margin-left: -1.2rem;
@@ -723,6 +714,19 @@ body::before {
   pointer-events: none;
 }
 
+.page__text {
+  min-height: 15.1rem;
+  margin-top: 2.3rem;
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 2.92rem;
+  color: #ffffff;
+}
+.page__text + .page__text {
+  min-height: 40.9rem;
+  margin-top: -0.6rem;
+}
+
 .contact__inner {
   position: relative;
   display: grid;
@@ -878,6 +882,34 @@ body::before {
   margin-left: -0.8rem;
   background-color: #353639;
   clip-path: polygon(0 0, 100% 0, 50% 100%);
+}
+
+.rules__inner {
+  position: relative;
+  display: grid;
+  grid-template-columns: 56.7rem 1fr;
+  align-items: start;
+}
+.rules__content {
+  text-align: right;
+}
+.rules__visual {
+  position: absolute;
+  display: block;
+  max-width: none;
+}
+.rules__line-right {
+  top: -14.13rem;
+  left: 41.7rem;
+}
+.rules__line-left {
+  top: -16.325rem;
+  left: -14.6rem;
+}
+.rules__scales {
+  top: 6.6rem;
+  left: -2.1rem;
+  width: 53.2rem;
 }
 
 /*# sourceMappingURL=style.css.map */
