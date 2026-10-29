@@ -1,0 +1,14 @@
+// Inner pages (about, contact, ...): space under header to footer
+.page {
+  min-height: 86.1rem;   // 861px = 972 - 111 (فوتر در 1052 با 80 margin)
+  padding-top: 12.3rem;  // 123px (234 - 111)
+
+  .container {
+    position: relative;
+
+    // Purple glow top right (Figma: 373px، #7661A4 80%، blur 300)
+    &::before {
+      @include glow(-32.3rem, 106.3rem, 37.3rem, 150px, 0.8);
+    }
+  }
+}

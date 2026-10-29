@@ -1,0 +1,163 @@
+.contact {
+  &__inner {
+    position: relative;
+    display: grid;
+    grid-template-columns: 56.7rem 1fr;  // ستون اول (سمت راست در RTL) = 567px
+    align-items: start;
+  }
+
+  &__content {
+    text-align: right;
+  }
+
+    &__list {
+    list-style: none;
+  }
+
+  &__item {
+    display: flex;
+    align-items: flex-start;
+    gap: 4.6rem;                    // 46px (1224 - 1178)
+    padding-inline-start: 1.6rem;   // 16px از راست (در RTL start = راست)
+    border-bottom: 1px solid #292a2d;
+
+    // ردیف تلفن: از 319 تا 412
+    &:nth-child(1) {
+      height: 9.3rem;               // 93px
+      padding-top: 3.8rem;          // 38px (357 - 319)
+    }
+
+    // ردیف ایمیل: از 412 تا 488
+    &:nth-child(2) {
+      height: 7.6rem;               // 76px 
+      padding-top: 2.5rem;          // 25px (437 - 412)
+
+      .contact__icon {
+        margin-top: 0.5rem;         // 5px (442 - 437)
+      }
+    }
+
+    // ردیف آدرس: از 488 تا نقشه (567)
+    &:nth-child(3) {
+      height: 7.9rem;               // 79px (567 - 488)
+      padding-top: 2.5rem;          // 25px 
+      border-bottom: none;
+    }
+  }
+
+  &__icon {
+    display: block;
+  }
+
+  &__text {
+    font-size: 1.4rem;              // 14px
+    font-weight: $fw-bold;
+    line-height: 2.4rem;            // 24px
+    color: #ffffff;                 
+    text-decoration: none;
+  }
+
+  &__map {
+    display: block;
+    width: 50.3rem;                 // 503px
+    height: 21.6rem;                // 216px
+    margin-inline: auto;
+    border-radius: 1.2rem;         
+    object-fit: cover;
+  }
+
+    &__visual {
+    position: absolute;
+    display: block;
+    max-width: none;
+  }
+    &__line-top {
+    top: -14.13rem;      // 92.7 - 234
+    left: 45.7rem;       // 599 - 142
+  }
+
+  &__line-middle {
+    top: -16.325rem;     // 70.75 - 234
+    left: -14.6rem;      // -4 - 142
+  }
+
+  &__line-bottom {
+    top: 33.393rem;      // 567.93 - 234
+    left: -21.369rem;    // -71.69 - 142
+  }
+
+  &__illustration {
+    top: 21.3rem;        // 447 - 234
+    left: 9rem;          // 232 - 142
+    width: 44.7rem;      // 447px
+  }
+
+  &__bubble-help {
+    top: 14.428rem;      // 378.28 - 234
+    left: -2.858rem;     // 113.42 - 142
+    width: 18.16rem;
+  }
+
+  &__bubble-help {
+    top: 14.428rem;      // 378.28 - 234
+    left: -2.858rem;     // 113.42 - 142
+    width: 18.16rem;     // ≈ 181.6px (کادر دور شکل چرخیده)
+  }
+    &__card {
+    width: 56.6rem;          // 566px
+    height: 50.1rem;         // 501px
+    margin-top: 4.1rem;      // 41px (318 - 277)
+    border: 1px solid rgba(143, 143, 143, 0.5);  
+    border-radius: 1.2rem;   // 12px
+    background-color: rgba(196, 196, 196, 0.08); // #C4C4C4 با 8%
+    box-shadow:
+      0 0.8rem 1.6rem rgba(0, 0, 0, 0.16),
+      inset 0 -1rem 0.4rem rgba(86, 86, 86, 0.12);
+    font-style: normal;      // تگ address به‌طور پیش‌فرض کج است
+    padding-inline: 3rem;    // 30px + 1px border = 31px تا خط
+  }
+    //Decorative bubbles (مبدأ: top - 234 و left - 142) =====
+  .bubble--hi {
+    top: 10.256rem;      // 336.56 - 234
+    left: 22.6rem;       // 368 - 142
+    width: 6.3rem;       // 63px
+    height: 5.59rem;     //  بدنه حباب
+
+    &::after {
+      height: 2.15rem;   // 77.45 - 55.9
+    }
+  }
+
+  .bubble--hello {
+    top: 11.881rem;      // 352.81 - 234
+    left: 38.8rem;       // 530 - 142
+    width: 13.4rem;      // 134px
+    height: 5.34rem;     
+    color: #f1a743;
+
+    &::after {
+      height: 2.69rem;   // 80.31 - 53.4
+    }
+  }
+
+  
+
+  &__bubble-text {
+    position: absolute;
+    top: 20.2rem;        // مرکز متن 472.6 - 234 - 36.56
+    left: 0.04rem;       // مرکز متن 204.9 - 142 - 62.5
+    width: 12.509rem;
+    height: 7.312rem;
+    font-size: 2.5rem;
+    font-weight: $fw-bold;
+    line-height: 3.2rem;
+    text-align: left;
+    color: #ffffff;
+    transform: rotate(-50.76deg);
+  }
+
+  &__accent {
+    display: block;
+    color: #f1a743;
+  }
+}

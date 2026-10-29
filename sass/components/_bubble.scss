@@ -1,0 +1,27 @@
+.bubble {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid transparent;
+  border-radius: 1rem;               
+  background:
+    linear-gradient(#353639, #353639) padding-box,
+    linear-gradient(180deg, #7661a4 0%, rgba(118, 97, 164, 0) 100%) border-box;
+  font-size: 2.5rem;                 // 25px
+  font-weight: $fw-bold;
+  color: #ffffff;
+
+  // tail
+  &::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    width: 1.6rem;                   
+    margin-top: -0.1rem;
+    margin-left: -0.8rem;
+    background-color: #353639;
+    clip-path: polygon(0 0, 100% 0, 50% 100%);
+  }
+}
